@@ -1,0 +1,35 @@
+
+:root {
+  --header-height: 4rem;
+}
+
+
+@media screen and (max-width: 767px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+  .nav__menu {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    padding: 2rem;
+    background-color: #00341e;
+    transition: .5s;
+  }
+}
+
+/*=== Show menu ===*/
+.show {
+  right: 0;
+}
+ 
+
+
+
